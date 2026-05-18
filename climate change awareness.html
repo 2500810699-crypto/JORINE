@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Change Awareness</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+      color: #222;
+    }header {
+  background: linear-gradient(to right, #2e8b57, #3cb371);
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #2e8b57;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+iframe {
+  width: 90%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #256d46;
+}
+
+footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Climate Change Awareness</h1>
+    <p>Protecting the Earth for future generations</p>
+  </header>  <section>
+    <h2>What is Climate Change?</h2>
+    <p>
+      Climate change refers to long-term changes in temperature, weather patterns,
+      and environmental conditions caused mainly by human activities such as burning fossil fuels,
+      deforestation, and pollution.
+    </p><button onclick="showMessage()">Learn More</button>
+<p id="message"></p>
+
+  </section>  <section>
+    <h2>Climate Change Pictures</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop" alt="Melting ice" /><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Forest nature" />
+
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Pollution smoke" />
+</div>
+
+  </section>  <section>
+    <h2>Effects of Climate Change</h2>
+    <ul>
+      <li>Rising temperatures across the world</li>
+      <li>Floods, droughts, and stronger storms</li>
+      <li>Melting glaciers and rising sea levels</li>
+      <li>Loss of wildlife and natural habitats</li>
+      <li>Health problems caused by pollution and heat</li>
+    </ul>
+  </section>  <section>
+    <h2>Ways to Reduce Climate Change</h2>
+    <ul>
+      <li>Plant more trees and protect forests</li>
+      <li>Use renewable energy like solar and wind</li>
+      <li>Reduce plastic waste and recycle materials</li>
+      <li>Save electricity and water at home</li>
+      <li>Use public transport, bicycles, or walk more often</li>
+    </ul>
+  </section>  <section>
+    <h2>Watch a Climate Change Video</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/G4H1N_yXBiA"
+        title="Climate Change Video"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </footer>  <script>
+    function showMessage() {
+      document.getElementById("message").innerHTML =
+        "Small actions like planting trees, saving energy, and reducing pollution can help fight climate change.";
+    }
+  </script></body>
+</html>
